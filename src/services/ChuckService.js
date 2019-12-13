@@ -6,8 +6,13 @@ class ChuckService {
         this.client = new Chuck();
     }
 
-    getRandomJoke() {
-        return this.client.getRandomJoke()
+    getRandomJoke(category = '') {
+        const params = category ? [category] : []
+        return this.client.getRandomJoke(...params)
+    }
+
+    getJokeCategories() {
+        return this.client.getJokeCategories()
     }
 }
 
