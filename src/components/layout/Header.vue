@@ -14,12 +14,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            
-        </ul>
+        <ul class="navbar-nav"></ul>
       </div>
     </nav>
-    <router-view />
   </div>
 </template>
 

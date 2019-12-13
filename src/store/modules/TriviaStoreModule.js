@@ -1,4 +1,4 @@
-import { triviaService } from './../../services/TriviaService'
+import { triviaService } from './../../services/TriviaService' // eslint-disable-line
 
 export const TriviaStore = {
     store: {
@@ -11,6 +11,6 @@ export const TriviaStore = {
 
     },
     getters: {
-        
+
     }
 }
