@@ -14,7 +14,11 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav"></ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <router-link class="route-link" :to="{ name: 'chuck' }">Chuck Norris</router-link>
+          </li>
+        </ul>
       </div>
     </nav>
   </div>
@@ -23,3 +27,10 @@
 <script>
 export default {};
 </script>
+
+<style scoped>
+    .route-link {
+        text-decoration: none;
+        color: white;
+    }
+</style>
