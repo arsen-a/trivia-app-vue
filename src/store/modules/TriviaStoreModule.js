@@ -12,6 +12,9 @@ export const TriviaStore = {
     actions: {
         getRandomTrivia(context) {
             triviaService.getRandomTrivia().then(tr => {
+                tr.data.forEach(trivia => {
+                    trivia.answerRevealed = false
+                })
                 context.commit('setRandomTrivia', tr.data)
             })
         }
